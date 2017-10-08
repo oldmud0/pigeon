@@ -1,0 +1,15 @@
+language: rust
+rust:
+    - stable
+    - beta
+    - nightly
+matrix:
+    allow_failures:
+        - rust: nightly
+env:
+    global:
+        - RUST_BACKTRACE=1
+notifications:
+    email: false
+    slack:
+        secure: Id4Aq68uy3iaBm5aG67QxymS7PbR1ZeSSh93/A/gDy7Xz9D/6b1BqMn0RY4SWZIiPhfckCP768ypxvZqxk46whWLShvxQ6sWCl9/FPP3ujfu4VcdkJYUUTjcMG+ynW/wY4yIXn2HdX+dyajHMfyvwVmTdUdNAgEFCbxa5zCgCEwlnn4m8pYLL3Zvk4JWBMb3xd1ZgulmTl1dMFpmhtKVIo8cpni4NEwYfXTpjiiQAjdHb21x7gVNGY5ct75PXl3k+5mSZiq8DYh8bxo1eCchYJTPtUgn8K1GC6cSh73+0vMYXmwEXpqMU0mySxPWoYbJi2rUyhAAEtRAvdKwt15IBYqNAEbklsG+9sK3TlzI9jy5D/AUyvmwacQQmPH3RSF+dR0PKj0ogDzJwXaLAnekNsGpy9XfA7WQElOMT+wxY/yLpXHIVxLGAYE+H3yM9PMinPhGKdJV4+h0dVUKTgqoFlHk4ri2lnAakYnNbFev6bFCjVKdRV0MB1tZQLfM66lh7Bp16NRX1j+23fE7VY2Dym8AxQ0EdWelOFbERWx46Axg8Tr70dNpXo6K+qPI8pRfQZABAaaRLXq3sxBK7lJMnO/KKywQSXwnJf1cb3UpgemJzYRQ8yQJXmoc8WdTk8qi8e9WK0odcrF2LAYr7Y7MEWO36bdO+zedrvKUSFzyRxs=
